@@ -1,0 +1,18 @@
+<ion-view title="My Notes">
+  <ion-nav-buttons side="right">
+       <button class="button button-icon icon ion-plus" ui-sref="note"></button>
+     </ion-nav-buttons>
+
+     <ion-content >
+       <ion-list can-swipe="true">
+         <ion-item ng-repeat="note in notes" ui-sref="note({noteid:note.id})">
+           <h2>{{note.name}}</h2>
+           <p>{{note.text | limitTo:40}}{{note.text.length > 40 ? '...':''}}</p>
+           <ion-option-button class="button-assertive" ng-click="deleteNote(note.id)">
+             Delete
+           </ion-option-button>
+         </ion-item>
+       </ion-list>
+         
+     </ion-content>
+</ion-view>

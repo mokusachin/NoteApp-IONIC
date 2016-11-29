@@ -1,0 +1,16 @@
+<ion-view title="{{note.name ||'New Note'}}">
+  <ion-nav-bar class="bar-balanced">
+      <ion-nav-back-button ng-click="back()"></ion-nav-back-button>
+  </ion-nav-bar>
+     <ion-content scroll="false">
+         <div class="list">
+<label class="item item-input">
+<input type="text" placeholder="Name" ng-model="note.name">
+</label>
+<label class=" item-input">
+<textarea rows="35" placeholder="Note" ng-model="note.text"></textarea> 
+</label>
+         </div>
+         
+     </ion-content>
+</ion-view>
