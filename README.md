@@ -1,2 +1,3 @@
 # NoteApp-IONIC
-note app using ionic 
+# A simple Note App That helps to add notes .
+# Built using Ionic frame work .
